@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "com.thirdweb.demo",
+    "scheme": "com.faran.wallet",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -14,32 +14,14 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.thirdweb.demo",
-      "associatedDomains": [
-        "webcredentials:thirdweb.com",
-        "applinks:thirdweb.com"
-      ]
+      "bundleIdentifier": "com.faran.wallet"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.thirdweb.demo",
-      "intentFilters": [
-        {
-          "autoVerify": true,
-          "action": "VIEW",
-          "data": {
-            "scheme": "https",
-            "host": "thirdweb.com"
-          },
-          "category": [
-            "BROWSABLE",
-            "DEFAULT"
-          ]
-        }
-      ]
+      "package": "com.faran.wallet"
     },
     "web": {
       "bundler": "metro",
@@ -84,9 +66,16 @@
     },
     "extra": {
       "eas": {
-        "projectId": "d1d7acaf-b44a-4425-af35-620596448499"
+        "projectId": "5dbc6717-fb35-4aa2-894e-6324b2012f3e"
+      },
+      "router": {
+        "asyncRoutes": {
+          "android": false,
+          "ios": false,
+          "default": "development"
+        }
       }
     },
-    "owner": "thirdweb"
+    "owner": "faranweb3s-organization"
   }
 }
